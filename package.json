@@ -1,0 +1,30 @@
+{
+  "name": "online-store-rest-api-express-prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorTheCreator/online-store-rest-api-express-prisma.git"
+  },
+  "author": "Morozov Igor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorTheCreator/online-store-rest-api-express-prisma/issues"
+  },
+  "homepage": "https://github.com/IgorTheCreator/online-store-rest-api-express-prisma#readme",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1",
+    "prisma": "^5.1.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.1.1",
+    "express": "^4.18.2"
+  }
+}
