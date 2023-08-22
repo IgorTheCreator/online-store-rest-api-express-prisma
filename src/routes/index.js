@@ -1,4 +1,5 @@
 import express from 'express';
+import mainRouter from './main.js';
 import cartRouter from './cart.js';
 import ordersRouter from './orders.js';
 import productsRouter from './products.js';
@@ -7,6 +8,7 @@ import adminRouter from './admin.js';
 
 const router = express.Router();
 
+router.use(mainRouter);
 router.use('/cart', cartRouter);
 router.use('/orders', ordersRouter);
 router.use('/products', productsRouter);

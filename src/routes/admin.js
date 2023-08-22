@@ -3,6 +3,7 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/');
+router.delete('/');
 
 router.get('/edit');
 router.post('/edit');

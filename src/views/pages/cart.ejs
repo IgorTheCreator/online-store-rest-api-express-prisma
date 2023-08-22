@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/cart.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="/">Main</a></li>
+          <li class="nav__list-item"><a href="/products">Products</a></li>
+          <li class="nav__list-item"><a href="/cart">Cart</a></li>
+          <li class="nav__list-item"><a href="/orders">Orders</a></li>
+          <li class="nav__list-item"><a href="auth">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1><%= title %></h1>
+      <button class="btn">Order</button>
+      <hr />
+      <% if (products.length > 0) { %> <% for (product of products) { %>
+      <div class="cart__item">
+        <h2><%= product.name %><%= product.quantity %></h2>
+        <button class="cart__button">X</button>
+      </div>
+      <% } %> <% } else { %>
+      <h2 style="margin: 15px">Nothing there</h2>
+      <% } %>
+    </main>
+  </body>
+</html>
