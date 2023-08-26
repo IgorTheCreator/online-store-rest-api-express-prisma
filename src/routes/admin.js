@@ -1,14 +1,15 @@
 import express from 'express';
+import adminController from '../controllers/adminController.js';
 
 const router = express.Router();
 
 router.get('/');
-router.delete('/');
+router.delete('/:productId');
 
-router.get('/edit');
-router.post('/edit');
+router.get('/edit/:productId');
+router.post('/edit/:productId');
 
-router.get('/add');
-router.post('/add');
+router.get('/add', adminController.getAddProduct);
+router.post('/add', adminController.postAddProduct);
 
 export default router;

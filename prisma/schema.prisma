@@ -32,7 +32,7 @@ model Carts {
 
 model Products {
   id Int @id @default(autoincrement())
-  name Int @unique
+  name String @unique
   price Float
   description String
   imageUrl String

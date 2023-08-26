@@ -7,15 +7,19 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <form action="">
+    <form action="/admin/add" method="POST">
       <label for="name">Title</label>
-      <input id="name" type="text" />
+      <input name="name" id="name" type="text" />
+
       <label for="imageUrl">Image URL</label>
-      <input id="imageUrl" type="text" />
+      <input name="imageUrl" id="imageUrl" type="text" />
+
       <label for="price">Price</label>
-      <input id="price" type="number" />
+      <input name="price" id="price" type="number" />
+
       <label for="description">Description</label>
-      <input id="description" type="text" />
+      <input name="description" id="description" type="text" />
+      <button type="submit">Add product</button>
     </form>
   </body>
 </html>

@@ -5,6 +5,7 @@ import path from 'node:path';
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded());
 const port = process.env.PORT || 3000;
 
 app.set('views', path.resolve('src', 'views'));
